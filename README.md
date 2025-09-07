@@ -34,6 +34,7 @@ Project Structure
 │
 └── README.md              # Project documentation
 
+
 Installation
 Prerequisites
 Python 3.7 or newer

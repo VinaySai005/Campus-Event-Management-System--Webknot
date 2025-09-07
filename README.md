@@ -17,32 +17,23 @@ Reporting: Generate analytics on event popularity and participation
 Project Structure
 /
 ├── src/
-
-│   ├── app.py              # Main application file
-
-│   └── requirements.txt    # Python dependencies
-
+│   ├── app.py              # Main application file (entry point of the project)
+│   └── requirements.txt    # Python dependencies (Flask, SQLite3, etc.)
+│
 ├── db/
-
-│   ├── schema.sql          # Database structure
-
-│   ├── seed.sql            # Sample data
-
-│   └── campus_events.db    # Database file (created automatically)
-
+│   ├── schema.sql          # Defines database tables and relationships
+│   ├── seed.sql            # Inserts sample data for testing
+│   └── campus_events.db    # SQLite database file (auto-generated)
+│
 ├── reports/
+│   ├── event-popularity.sql      # Query to track which events are most popular
+│   ├── attendance-percentage.sql # Query to calculate attendance percentage per student/event
+│   ├── average-feedback.sql      # Query to analyze feedback scores
+│   ├── student-participation.sql # Query to measure student participation
+│   └── top-students.sql          # Query to identify most active students
+│
+└── README.md              # Project documentation
 
-│   ├── event-popularity.sql      # Popular events query
-
-│   ├── attendance-percentage.sql # Attendance tracking
-
-│   ├── average-feedback.sql      # Feedback analysis
-
-│   ├── student-participation.sql # Student activity
-
-│   └── top-students.sql          # Top participants
-
-└── README.md              # This documentation
 Installation
 Prerequisites
 Python 3.7 or newer

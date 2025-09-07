@@ -15,15 +15,14 @@ Feedback Collection: Gather ratings and comments from attendees
 Reporting: Generate analytics on event popularity and participation
 
 Project Structure
-text
 /
 ├── src/
 │   ├── app.py              # Main application file
 │   └── requirements.txt    # Python dependencies
 ├── db/
 │   ├── schema.sql          # Database structure
-│   ├── seed.sql           # Sample data
-│   └── campus_events.db   # Database file (created automatically)
+│   ├── seed.sql            # Sample data
+│   └── campus_events.db    # Database file (created automatically)
 ├── reports/
 │   ├── event-popularity.sql      # Popular events query
 │   ├── attendance-percentage.sql # Attendance tracking
